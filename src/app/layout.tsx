@@ -1,4 +1,4 @@
-import { mainMetadata,  } from "@/shared";
+import { mainMetadata } from "@/shared";
 import "@/app/styles/globals.css";
 import { ThemeProvider } from "@/app";
 import { mono, sans } from "@/shared/config/fonts/fonts";
@@ -12,9 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${sans.variable} ${mono.variable} antialiased h-screen flex flex-col`}
+        className={`${sans.variable} ${mono.variable} light antialiased h-screen flex flex-col`}
       >
         <ThemeProvider
           attribute="class"

@@ -3,7 +3,7 @@ import { Icon } from "@/shared";
 export const ContactsPage = () => {
   return (
     <div className="page-layout">
-      <h1 className="text-5xl">Hit me up!</h1>
+      <h1 className="text-5xl">Holla at me!</h1>
       <div className="mt-6 flex flex-col items-center justify-center">
         <a
           className="mt-4 text-2xl text-green-700 font-medium"

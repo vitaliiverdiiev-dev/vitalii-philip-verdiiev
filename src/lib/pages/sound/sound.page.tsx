@@ -8,7 +8,10 @@ export const SoundPage = () => {
       </div>
       <div className="flex flex-col justify-center">
         {aspects.map((aspect, index) => (
-          <div key={index} className="flex items-center hover:bg-gray-100 py-4 hover:font-semibold">
+          <div
+            key={index}
+            className="flex items-center hover:bg-gray-100 hover:text-black py-4 hover:font-semibold"
+          >
             <h3 className="text-2xl ml-2">{aspect}</h3>
           </div>
         ))}
