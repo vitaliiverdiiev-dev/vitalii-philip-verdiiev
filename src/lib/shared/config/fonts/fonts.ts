@@ -1,13 +1,12 @@
-import { Geist_Mono, Poppins } from "next/font/google";
+import { DM_Sans, Geist_Mono } from "next/font/google";
 
-export const geistSans = Poppins({
-  variable: "--font-geist-sans",
+export const sans = DM_Sans({
+  variable: "--font-sans",
   subsets: ["latin"],
-  display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
-export const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const mono = Geist_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
 });
