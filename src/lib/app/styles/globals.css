@@ -120,3 +120,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .page-layout {
+    @apply h-full container mx-auto flex flex-col items-center justify-center text-center;
+  }
+}
