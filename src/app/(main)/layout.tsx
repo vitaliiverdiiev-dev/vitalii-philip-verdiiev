@@ -1,4 +1,4 @@
-import { Header } from "@/widgets";
+import { Footer, Header } from "@/widgets";
 import { mainMetadata } from "@/shared";
 import "@/app/styles/globals.css";
 import { MainLogo } from "@/widgets/logo/main-logo";
@@ -14,6 +14,7 @@ export default function RootLayout({
     <>
       <Header LogoComponent={MainLogo} />
       {children}
+      <Footer />
     </>
   );
 }

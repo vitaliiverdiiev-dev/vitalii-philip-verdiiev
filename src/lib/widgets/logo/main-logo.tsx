@@ -1,9 +1,14 @@
+import { cn } from "@/shared";
 import Link from "next/link";
 
-export const MainLogo = () => {
+type Props = {
+  className?: string;
+};
+
+export const MainLogo: React.FC<Props> = ({ className }) => {
   return (
-    <Link href="/" className="text-2xl font-medium">
-      Vitalii <span className="text-green-500">Philip</span> Verdiiev
+    <Link href="/" className={cn("text-2xl font-medium", className)}>
+      Vitalii <span className="text-green-700">Philip</span> Verdiiev
     </Link>
   );
 };

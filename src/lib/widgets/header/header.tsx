@@ -10,7 +10,7 @@ type HeaderProps = {
 export const Header = ({ LogoComponent }: HeaderProps) => {
   return (
     <header>
-      <div className="container mx-auto flex justify-between py-4">
+      <div className="container mx-auto flex justify-between items-center h-[80px]">
         <LogoComponent />
         <nav className="flex-1 flex items-center justify-center">
           <NavLinks links={navLinks} />

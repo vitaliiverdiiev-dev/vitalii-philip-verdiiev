@@ -1,14 +1,11 @@
-"use client";
-
-import { Button } from "@/shared";
+import { MainLogo } from "@/widgets/logo/main-logo";
 
 export const HomePage = () => {
   return (
-    <div className="container mx-auto grid place-items-center h-full">
+    <div className="flex-1 flex items-center justify-center">
       <div className="text-center">
-        <Button className="w-full" onClick={() => console.log("Hired")}>
-          Hire Me
-        </Button>
+        <MainLogo className="text-6xl font-normal" />
+        <h2 className="mt-4 text-4xl">React Engineer, Music Producer, and Artist</h2>
       </div>
     </div>
   );

@@ -17,7 +17,9 @@ export const NavLinks = ({ links }: { links: NavLink[] }) => {
           <li key={`${link.label}-${link.path}`}>
             <Link
               className={cn(
-                isActive ? "color-white bg-green-500 text-white font-semibold" : "",
+                isActive
+                  ? "underline underline-offset-4 font-medium text-green-700"
+                  : "",
                 "p-4 rounded-md"
               )}
               href={link.path}
