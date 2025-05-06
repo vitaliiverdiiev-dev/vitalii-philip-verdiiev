@@ -12,13 +12,12 @@ export const Header = ({ LogoComponent }: HeaderProps) => {
     <header>
       <div className="container mx-auto flex justify-between items-center h-[80px]">
         <LogoComponent />
-        <nav className="flex-1 flex items-center justify-center">
+        <nav className="flex-1 flex items-center justify-end">
           <NavLinks links={navLinks} />
+          <div className="ml-10">
+            <ThemeToggle />
+          </div>
         </nav>
-
-        <div>
-          <ThemeToggle />
-        </div>
       </div>
     </header>
   );

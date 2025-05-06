@@ -1,5 +1,0 @@
-# .eslintignore
-.husky/
-node_modules/
-public/
-.next/

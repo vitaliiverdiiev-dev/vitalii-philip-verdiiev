@@ -13,7 +13,7 @@ export const AboutMePage = () => {
           className="rounded-xl"
         />
       </div>
-      <div className="border-2 flex flex-col items-center justify-center rounded-xl">
+      <div className="border-2 flex flex-col items-center justify-center rounded-xl my-6">
         <h2 className="text-5xl text-center mb-10">About Me</h2>
         <div className="flex flex-col gap-4 max-w-10/12">
           <p>
