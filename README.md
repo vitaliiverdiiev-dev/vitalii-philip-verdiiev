@@ -1,4 +1,4 @@
-🌍 ## Personal Web Page
+🌍 Personal Web Page
 Welcome to my personal web page — a minimalist, fully responsive site built with Next.js, TypeScript, and Tailwind CSS. It serves as a central hub for everything I do:
 
 💻 React Engineering – portfolio, projects, and coding philosophy
