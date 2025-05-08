@@ -3,7 +3,7 @@ import "@/app/styles/globals.css";
 import { ThemeProvider } from "@/app";
 import { mono, sans } from "@/shared/config/fonts/fonts";
 import { Footer } from "@/widgets";
-
+import { unstable_ViewTransition as ViewTransition } from "react";
 export { mainMetadata as metadata };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ViewTransition name="page">{children}</ViewTransition>
           <Footer />
         </ThemeProvider>
       </body>
