@@ -1,10 +1,9 @@
 import { mainMetadata } from "@/shared";
-import "@/app/styles/globals.css";
 import { ThemeProvider } from "@/app";
 import { mono, sans } from "@/shared/config/fonts/fonts";
 import { Footer } from "@/widgets";
-import { unstable_ViewTransition as ViewTransition } from "react";
 export { mainMetadata as metadata };
+import "@/app/styles/globals.css";
 
 export default function RootLayout({
   children,
@@ -22,7 +21,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ViewTransition name="page">{children}</ViewTransition>
+          {children}
           <Footer />
         </ThemeProvider>
       </body>
