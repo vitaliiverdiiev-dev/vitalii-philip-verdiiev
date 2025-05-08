@@ -15,7 +15,7 @@ export const ComingSoon: React.FC<Props> = ({ title, children }) => {
           </h1>
           <p className="text-neutral-500 max-w-md mx-auto">
             This page is still under construction. I&apos;m crafting something
-            meaningful - check back soon.
+            meaningful - come back soon.
           </p>
         </div>
         {children}

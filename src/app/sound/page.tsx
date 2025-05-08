@@ -6,7 +6,9 @@ export default function Page() {
   return (
     <ComingSoon title="Sound page">
       <div className="mt-10">
-        <p className="text-2xl font-semibold">Meanwhile, check out my music</p>
+        <p className="text-2xl font-semibold text-center">
+          Meanwhile, check out my music
+        </p>
         <ul className="flex items-center justify-center gap-4 mt-4 transition-colors duration-300">
           <li>
             <a
