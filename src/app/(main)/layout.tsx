@@ -1,7 +1,7 @@
 import { Header } from "@/widgets";
 import { mainMetadata } from "@/shared";
-import "@/app/styles/globals.css";
 import { MainLogo } from "@/widgets/logo/main-logo";
+import "@/app/styles/globals.css";
 
 export { mainMetadata as metadata };
 
@@ -12,7 +12,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <Header LogoComponent={MainLogo} />
+      <Header logo={<MainLogo />} />
       {children}
     </>
   );

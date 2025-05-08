@@ -2,16 +2,19 @@ import { Icon } from "@/shared";
 
 export const ContactsPage = () => {
   return (
-    <div className="page-layout">
-      <h1 className="text-5xl">Holla at me!</h1>
+    <div className="container flex-1 flex flex-col items-center justify-center text-center">
+      <h1 className="text-3xl md:text-5xl">Holla at me!</h1>
       <div className="mt-6 flex flex-col items-center justify-center">
         <a
-          className="mt-4 text-2xl text-green-700 font-medium"
+          className="mt-4 text-xl md:text-2xl text-green-700 font-medium"
           href="tel:+380635105769"
         >
           +380 63 510 57 69
         </a>
-        <a className="mt-4 text-2xl" href="mail:+vitaliiverdiiev@gmail.com">
+        <a
+          className="mt-4 text-xl md:text-2xl"
+          href="mail:+vitaliiverdiiev@gmail.com"
+        >
           vitaliiverdiiev@gmail.com
         </a>
       </div>

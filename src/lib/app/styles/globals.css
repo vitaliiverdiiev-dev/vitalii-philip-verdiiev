@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --breakpoint-md: 900px;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
@@ -117,16 +119,15 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
 }
 
-@layer utilities {
-  .page-layout {
-    @apply h-full container mx-auto flex flex-col items-center justify-center text-center;
-  }
-}
-
-body {
-  @apply font-sans;
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  max-width: 1440px;
+  min-width: 320px;
+  /* border: 1px solid red; */
 }

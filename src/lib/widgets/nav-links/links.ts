@@ -24,4 +24,5 @@ export const navLinks: NavLink[] = [
 export type NavLink = {
   label: string;
   path: string;
+  disabled?: boolean;
 };

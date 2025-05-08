@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const AboutMePage = () => {
   return (
-    <div className="container mx-auto flex-1 grid grid-cols-2">
+    <div className="container flex-1 grid grid-rows-[auto_auto] md:grid-rows-1 md:grid-cols-2 md:gap-4">
       <div className="flex flex-col justify-center items-center">
         <Image
           alt="My amiga and I"
@@ -13,9 +13,11 @@ export const AboutMePage = () => {
           className="rounded-xl"
         />
       </div>
-      <div className="border-2 flex flex-col items-center justify-center rounded-xl my-6">
-        <h2 className="text-5xl text-center mb-10">About Me</h2>
-        <div className="flex flex-col gap-4 max-w-10/12">
+      <div className="flex flex-col items-center justify-center rounded-xl my-6">
+        <h2 className="text-3xl md:text-5xl text-center my-5 md:my-10">
+          About Me
+        </h2>
+        <div className="flex flex-col gap-4 max-w-11/12 md:max-w-10/12">
           <p>
             I&apos;m Vitalii Philip Verdiiev - a React Engineer and music
             producer from Ukraine.
