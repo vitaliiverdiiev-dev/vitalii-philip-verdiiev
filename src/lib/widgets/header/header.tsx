@@ -31,8 +31,8 @@ export const Header = ({ logo }: HeaderProps) => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 top-[50px] z-50 md:hidden bg-background bg-opacity-100 backdrop-blur-sm transform-gpu overflow-y-auto">
-          <div className="container h-full flex flex-col items-center gap-8 py-8 px-4 sm:px-6 lg:px-8">
+        <div className="fixed inset-0 top-[50px] z-50 md:hidden bg-background bg-opacity-100 backdrop-blur-md transform-gpu overflow-y-auto">
+          <div className="container h-full flex flex-col items-center justify-center gap-8 py-8 px-4 sm:px-6 lg:px-8">
             <NavLinks
               links={navLinks}
               className="flex-col items-center text-xl space-y-4"
