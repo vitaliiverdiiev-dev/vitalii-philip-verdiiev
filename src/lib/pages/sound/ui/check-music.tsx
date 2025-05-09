@@ -4,7 +4,7 @@ export const CheckMusic = () => {
   return (
     <div>
       <p className="text-2xl text-center font-thin">Check out my music</p>
-      <ul className="flex items-center justify-center gap-4 mt-4 transition-colors duration-300">
+      <ul className="flex items-center justify-center gap-4 mt-6 transition-colors duration-300">
         <li>
           <a
             href="https://music.apple.com/us/artist/phat-phil/1795527545"
@@ -14,7 +14,7 @@ export const CheckMusic = () => {
             <Icon
               weight="thin"
               icon="apple"
-              size="50px"
+              size="40px"
               className="hover:text-gray-600 transition-colors duration-300"
             />
           </a>
@@ -28,7 +28,7 @@ export const CheckMusic = () => {
             <Icon
               weight="thin"
               icon="spotify"
-              size="50px"
+              size="40px"
               className="hover:text-green-600 transition-colors duration-300"
             />
           </a>
@@ -42,7 +42,7 @@ export const CheckMusic = () => {
             <Icon
               weight="thin"
               icon="youtube"
-              size="50px"
+              size="40px"
               className="hover:text-red-600 transition-colors duration-300"
             />
           </a>
