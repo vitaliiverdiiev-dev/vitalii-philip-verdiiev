@@ -13,6 +13,9 @@ export const AboutMePage = () => {
             width={500}
             height={500}
             className="rounded-xl w-10/12 md:w-full"
+            placeholder="blur"
+            blurDataURL="/blur_amigos.png"
+            priority={true}
           />
         </div>
         <div className="flex flex-col items-center justify-center rounded-xl my-6">

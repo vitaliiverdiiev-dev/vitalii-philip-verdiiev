@@ -8,7 +8,7 @@ export const HomePage = () => {
         <div className="text-center">
           <MainLogo className="text-3xl md:text-5xl font-normal tracking-[1.3px]" />
           <h2 className="text-lg mt-4 md:text-2xl">
-            React Engineer, Music Producer, and Artist
+            React Engineer, Audio Engineer, and Artist
           </h2>
         </div>
       </div>

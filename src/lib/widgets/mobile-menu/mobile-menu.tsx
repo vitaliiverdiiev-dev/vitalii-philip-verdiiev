@@ -10,15 +10,13 @@ type MobileMenuProps = {
 
 export const MobileMenu = ({ isOpen, onToggle, ...props }: MobileMenuProps) => {
   return (
-    <Button
-      variant="outline"
-      size="icon"
-      className="md:hidden"
+    <button
+      className="md:hidden p-0 m-0 h-fit w-fit"
       aria-label="Menu"
       onClick={onToggle}
       {...props}
     >
-      <Icon icon={isOpen ? "close" : "list"} />
-    </Button>
+      <Icon icon={isOpen ? "close" : "list"} size="26px" />
+    </button>
   );
 };

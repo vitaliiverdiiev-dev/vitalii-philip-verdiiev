@@ -7,6 +7,7 @@ import {
   SpotifyLogo,
   YoutubeLogo,
   GithubLogo,
+  FileArrowDown,
 } from "@phosphor-icons/react/dist/ssr";
 
 export const ICON_MAP = {
@@ -18,6 +19,7 @@ export const ICON_MAP = {
   spotify: SpotifyLogo,
   youtube: YoutubeLogo,
   githib: GithubLogo,
+  "download-file": FileArrowDown,
 } as const;
 
 export type IIconName = keyof typeof ICON_MAP;
