@@ -6,13 +6,13 @@ export const AboutMePage = () => {
   return (
     <PageWrapper>
       <div className="container flex-1 grid grid-rows-[auto_auto] md:grid-rows-1 md:grid-cols-2 md:gap-4">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mt-10 md:mt-0">
           <Image
             alt="My amiga and I"
             src="/big_amigos.png"
             width={500}
             height={500}
-            className="rounded-xl"
+            className="rounded-xl w-10/12 md:w-full"
           />
         </div>
         <div className="flex flex-col items-center justify-center rounded-xl my-6">
