@@ -5,7 +5,7 @@ import { CheckMusic } from "./ui/check-music";
 export const SoundPage = () => {
   return (
     <div className="container flex-1">
-      <ul className="h-full grid grid-rows-[repeat(9,_minmax(200px,_auto))] md:grid-rows-3 md:grid-cols-3">
+      <ul className="h-full grid grid-rows-[repeat(9,_minmax(250px,_auto))] md:grid-rows-3 md:grid-cols-3">
         <li className="min-h-20">
           <GrayImage alt="Akai MPK" src="/akai-mk-ii.jpg" />
         </li>
@@ -27,7 +27,7 @@ export const SoundPage = () => {
             description="Bark-A-Lot Records is a home for artists who create with truth, vulnerability, and vision. We nurture raw voices and genre-defying sounds that move both heart and mind."
           />
         </li>
-        <li className="flex flex-col items-center justify-center bg-white -order-1 md:order-none">
+        <li className="flex flex-col items-center justify-center bg-white dark:bg-black -order-1 md:order-none">
           <CheckMusic />
         </li>
         <li className="order-2 md:order-none">
@@ -39,8 +39,8 @@ export const SoundPage = () => {
         <li className="order-1 md:order-none">
           <GrayImage src="/adams.jpg" alt="Adam Audio D3V" />
         </li>
-        <li className="flex-col items-center justify-center bg-white flex order-4 md:order-none">
-          <p>Am I being frankly?</p>
+        <li className="flex flex-col items-center justify-center bg-white dark:bg-black order-4 md:order-none p-4">
+          <p className="text-center text-sm">Am I being frank?</p>
         </li>
         <li className="order-3 md:order-none">
           <GrayImage src="/ssl.jpg" alt="SSL 2+" />
