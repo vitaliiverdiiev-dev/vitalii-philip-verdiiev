@@ -24,8 +24,8 @@ export const AboutMePage = () => {
           </h2>
           <div className="flex flex-col gap-4 max-w-11/12 md:max-w-10/12">
             <p>
-              I&apos;m Vitalii Philip Verdiiev - a React Engineer and music
-              producer from Ukraine.
+              I&apos;m Vitalii Philip Verdiiev - a React Engineer, Audio
+              Engineer, and Artist from Ukraine.
             </p>
             <p>
               I split my time between writing clean TypeScript code and crafting
