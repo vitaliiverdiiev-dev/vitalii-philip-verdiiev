@@ -42,7 +42,7 @@ export const SoundPage = () => {
             <GrayImage src="/adams.jpg" alt="Adam Audio D3V" />
           </li>
           <li className="flex flex-col items-center justify-center bg-white dark:bg-black order-4 md:order-none p-4">
-            <p className="text-center text-sm">Am I being frankly?</p>
+            <p className="text-center text-md">Am I being frankly?</p>
           </li>
           <li className="order-3 md:order-none">
             <GrayImage src="/ssl.jpg" alt="SSL 2+" />

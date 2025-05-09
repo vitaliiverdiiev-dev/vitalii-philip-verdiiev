@@ -21,11 +21,11 @@ export const FlipCard: React.FC<Props> = ({ title, description }) => {
         } md:hover:rotate-y-180`}
       >
         <div className="absolute w-full h-full backface-hidden flex justify-center items-center bg-white dark:bg-black">
-          <span className="text-xl font-light text-center">{title}</span>
+          <span className="text-lg font-light text-center">{title}</span>
         </div>
 
         <div className="absolute w-full h-full rotate-y-180 backface-hidden bg-white dark:bg-black py-4 px-6 flex flex-col justify-center items-center gap-2">
-          <h2 className="text-xl font-semibold text-center">{title}</h2>
+          <h2 className="text-lg font-semibold text-center mb-1">{title}</h2>
           {description.split(".").map((sentence, i) =>
             sentence.trim() ? (
               <p key={i} className="text-center text-sm">
