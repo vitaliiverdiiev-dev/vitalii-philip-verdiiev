@@ -1,9 +1,9 @@
 import { PageWrapper } from "@/widgets";
 
-export const DevPage = () => {
+export default function Page() {
   return (
     <PageWrapper>
-      <h2 className="text-2xl mb-6 text-center">Dev</h2>
+      <h2 className="text-2xl mb-6">Education</h2>
     </PageWrapper>
   );
-};
+}

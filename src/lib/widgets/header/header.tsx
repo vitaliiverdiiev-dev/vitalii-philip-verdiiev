@@ -18,8 +18,8 @@ export const Header = ({ logo }: HeaderProps) => {
   };
 
   return (
-    <header>
-      <div className="container pb-0 flex justify-between items-center h-[50px] md:h-[80px] relative">
+    <header className="fixed top-0 left-0 w-full z-50 bg-background text-foreground shadow">
+      <div className="container pb-0 flex justify-between items-center h-[50px] md:h-20">
         {logo}
         <MobileMenu isOpen={isMobileMenuOpen} onToggle={toggleMobileMenu} />
         <nav className="flex-1 hidden md:flex md:items-center md:justify-end">

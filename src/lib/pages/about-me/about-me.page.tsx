@@ -5,7 +5,7 @@ import Link from "next/link";
 export const AboutMePage = () => {
   return (
     <PageWrapper>
-      <div className="container flex-1 grid grid-rows-[auto_auto] md:grid-rows-1 md:grid-cols-2 md:gap-4">
+      <div className="container flex-1 grid grid-rows-[auto_auto] md:grid-rows-1 md:grid-cols-2 md:gap-4 mt-20">
         <div className="flex flex-col justify-center items-center mt-10 md:mt-0">
           <Image
             alt="My amiga and I"

@@ -1,6 +1,4 @@
-import { DownloadCVButton } from "@/features";
-import { ComingSoon, DevPage } from "@/pages";
-import { Icon } from "@/shared";
+import { DevPage } from "@/pages";
 
 export default function Page() {
   return <DevPage />;
