@@ -9,6 +9,7 @@ import {
   GithubLogo,
   FileArrowDown,
   CaretRight,
+  DotsSix,
 } from "@phosphor-icons/react/dist/ssr";
 
 export const ICON_MAP = {
@@ -16,6 +17,7 @@ export const ICON_MAP = {
   telegram: TelegramLogo,
   list: List,
   close: X,
+  dots: DotsSix,
   apple: AppleLogo,
   spotify: SpotifyLogo,
   youtube: YoutubeLogo,
