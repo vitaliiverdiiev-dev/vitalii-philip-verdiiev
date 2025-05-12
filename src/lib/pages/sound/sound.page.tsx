@@ -6,7 +6,7 @@ import { PageWrapper } from "@/widgets";
 export const SoundPage = () => {
   return (
     <PageWrapper>
-      <div className="container flex-1">
+      <div className="container flex-1 mt-20">
         <ul className="h-full grid grid-rows-[repeat(9,_minmax(250px,_auto))] md:grid-rows-3 md:grid-cols-3">
           <li className="min-h-20">
             <GrayImage alt="Akai MPK" src="/akai-mk-ii.jpg" />
