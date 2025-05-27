@@ -12,7 +12,7 @@ export const AboutMePage = () => {
             src="/big_amigos.png"
             width={500}
             height={500}
-            className="rounded-xl w-10/12 md:w-full"
+            className="rounded-xl w-full sm:w-10/12 md:w-8/12"
             placeholder="blur"
             blurDataURL="/blur_amigos.png"
             priority={true}
