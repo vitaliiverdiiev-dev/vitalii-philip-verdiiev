@@ -18,7 +18,7 @@ export const PageWrapper = ({ children }: Props) => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="flex-1 flex flex-col"
+        className="flex-1 flex flex-col h-full"
       >
         {children}
       </motion.div>

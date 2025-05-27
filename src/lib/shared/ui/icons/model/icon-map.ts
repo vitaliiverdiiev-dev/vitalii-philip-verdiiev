@@ -10,6 +10,18 @@ import {
   FileArrowDown,
   CaretRight,
   DotsSix,
+  HouseSimple,
+  ReadCvLogo,
+  Info,
+  Stack,
+  GraduationCap,
+  Lifebuoy,
+  BagSimple,
+  UserGear,
+  HardHat,
+  User,
+  Waveform,
+  AddressBook,
 } from "@phosphor-icons/react/dist/ssr";
 
 export const ICON_MAP = {
@@ -21,9 +33,24 @@ export const ICON_MAP = {
   apple: AppleLogo,
   spotify: SpotifyLogo,
   youtube: YoutubeLogo,
-  githib: GithubLogo,
+  github: GithubLogo,
   "caret-right": CaretRight,
   "download-file": FileArrowDown,
-} as const;
+  "house-simple": HouseSimple,
+  "read-cv": ReadCvLogo,
+  info: Info,
+  stack: Stack,
+  graduation: GraduationCap,
+  lifebuoy: Lifebuoy,
+  bag: BagSimple,
+  user: UserGear,
+  hardhat: HardHat,
+  userProfile: User,
+  waveform: Waveform,
+  addressBook: AddressBook,
+} as const satisfies Record<
+  string,
+  React.FC<React.SVGAttributes<SVGSVGElement>>
+>;
 
 export type IIconName = keyof typeof ICON_MAP;

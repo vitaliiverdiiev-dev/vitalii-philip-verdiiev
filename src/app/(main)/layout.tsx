@@ -1,7 +1,9 @@
-import { Header } from "@/widgets";
 import { mainMetadata } from "@/shared";
+
 import { MainLogo } from "@/widgets/logo/main-logo";
 import "@/app/styles/globals.css";
+import { Header } from "@/widgets";
+// import { Header } from "@/widgets/adaprive-header/header";
 
 export { mainMetadata as metadata };
 

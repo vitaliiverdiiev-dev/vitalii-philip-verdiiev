@@ -4,7 +4,7 @@ import { PageWrapper } from "@/widgets";
 export const ContactsPage = () => {
   return (
     <PageWrapper>
-      <div className="container flex-1 flex flex-col items-center justify-center text-center">
+      <div className="container m-auto h-full flex-1 flex flex-col items-center justify-center text-center">
         <h1 className="text-3xl md:text-5xl">Holla at me!</h1>
         <div className="mt-6 flex flex-col items-center justify-center">
           <a

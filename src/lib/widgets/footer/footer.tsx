@@ -8,8 +8,8 @@ export const Footer = () => {
 
   return (
     <footer className="relative">
-      <div className="container min-h-[50px] mx-auto text-center">
-        <p>
+      <div className="container min-h-[40px] mx-auto text-center">
+        <p className="text-sm">
           &copy; {year} There ain&apos;t no rights... what should I reserve then
           though?
         </p>

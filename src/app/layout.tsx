@@ -1,9 +1,8 @@
-import { mainMetadata } from "@/shared";
-import { ThemeProvider } from "@/app";
-import { mono, sans, titles } from "@/shared/config/fonts/fonts";
 import { Footer } from "@/widgets";
-export { mainMetadata as metadata };
 import "@/app/styles/globals.css";
+import { cn, HEADER_LG, mono, sans, titles } from "@/shared";
+
+export { mainMetadata as metadata } from "@/shared";
 
 export default function RootLayout({
   children,
@@ -13,17 +12,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${sans.variable} ${mono.variable} ${titles.variable} light antialiased h-screen flex flex-col`}
+        className={cn(
+          sans.variable,
+          mono.variable,
+          titles.variable,
+          "flex flex-col min-h-screen h-screen overflow-y-scroll bg-neutral-50",
+          "text-neutral-900 light antialiased "
+        )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+        <div
+          className={cn("flex-1")}
         >
           {children}
-          <Footer />
-        </ThemeProvider>
+        </div>
+        <Footer />
       </body>
     </html>
   );
