@@ -21,7 +21,7 @@ export const ICON_MAP = {
   apple: AppleLogo,
   spotify: SpotifyLogo,
   youtube: YoutubeLogo,
-  githib: GithubLogo,
+  github: GithubLogo,
   "caret-right": CaretRight,
   "download-file": FileArrowDown,
 } as const;
