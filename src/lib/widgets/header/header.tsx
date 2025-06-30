@@ -19,7 +19,7 @@ export const Header = ({ logo }: HeaderProps) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-background text-foreground shadow">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-black text-foreground shadow">
       <div className="container flex justify-between items-center h-[50px] md:h-20">
         {logo}
         <MobileMenu isOpen={isMobileMenuOpen} onToggle={toggleMobileMenu} />
@@ -33,8 +33,8 @@ export const Header = ({ logo }: HeaderProps) => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 top-[50px] z-50 md:hidden bg-background bg-opacity-100 backdrop-blur-md transform-gpu overflow-y-auto">
-          <div className="container h-full flex flex-col items-center justify-center gap-8 py-8 px-4 sm:px-6 lg:px-8">
+        <div className="fixed inset-0 top-[50px] z-50 md:hidden bg-white dark:bg-black transform-gpu overflow-y-auto">
+          <div className="container min-h-full flex flex-col items-center justify-center gap-8 my-4 px-4 sm:px-6 lg:px-8">
             <NavLinks
               links={navLinks}
               className="flex-col items-center text-xl space-y-4"

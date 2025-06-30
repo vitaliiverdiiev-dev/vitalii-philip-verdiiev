@@ -6,13 +6,13 @@ import { useTranslations } from "next-intl";
 
 export const Footer = () => {
   const year = useMemo(() => new Date().getFullYear(), []);
-  const t = useTranslations('footer');
+  const t = useTranslations("footer");
 
   return (
     <footer className="relative">
       <div className="container min-h-[50px] mx-auto text-center">
-        <p>
-          &copy; {year} {t('copy-rights')}
+        <p className="text-sm md:text-base">
+          &copy; {year} {t("copy-rights")}
         </p>
       </div>
       <Image

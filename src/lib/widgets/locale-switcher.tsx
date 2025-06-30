@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useTransition } from 'react';
-import { useLocale } from 'next-intl';
-import { toast } from 'sonner';
-import { Button } from '@/shared/ui/button';
-import { setUserLocale } from '../../i18n/locale';
-import { Locale } from '../../i18n/config';
-import { ENGLISH, UKRAINIAN } from '../../i18n/consts';
+import { useTransition } from "react";
+import { useLocale } from "next-intl";
+import { toast } from "sonner";
+import { Button } from "@/shared/ui/button";
+import { setUserLocale } from "../../i18n/locale";
+import { Locale } from "../../i18n/config";
+import { ENGLISH, UKRAINIAN } from "../../i18n/consts";
 
 export default function LocaleSwitcher() {
   const locale = useLocale();
@@ -19,16 +19,16 @@ export default function LocaleSwitcher() {
       setUserLocale(newLocale);
 
       if (newLocale === UKRAINIAN) {
-        toast.error("Oh, no, don't do that, please! Learn English...");
+        toast.error("Oh no, don't do that, please! Learn English...");
       } else {
-        toast.success('Good choice!');
+        toast.success("Good choice!");
       }
     });
   };
 
   return (
     <Button
-      aria-label={`Switch to ${locale === ENGLISH ? 'Ukrainian' : 'English'}`}
+      aria-label={`Switch to ${locale === ENGLISH ? "Ukrainian" : "English"}`}
       className="text-sm"
       variant="outline"
       size="icon"

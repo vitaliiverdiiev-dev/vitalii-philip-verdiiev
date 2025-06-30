@@ -10,7 +10,7 @@ export const AboutMePage = () => {
   return (
     <PageWrapper>
       <div className="container flex-1 grid grid-rows-[auto_auto] md:grid-rows-1 md:grid-cols-2 md:gap-4 mt-20">
-        <div className="flex flex-col justify-center items-center mt-10 md:mt-0">
+        <div className="flex flex-col justify-center items-center md:mt-0">
           <Image
             alt="My amiga and I"
             src="/big_amigos.png"
@@ -26,7 +26,7 @@ export const AboutMePage = () => {
           <h2 className="text-3xl md:text-5xl text-center my-5 md:my-10">
             {t("title")}
           </h2>
-          <div className="flex flex-col gap-4 max-w-11/12 md:max-w-10/12">
+          <div className="flex flex-col gap-4 md:max-w-10/12">
             {paragraphs.map((paragraph, idx) => (
               <p
                 key={idx}
