@@ -1,9 +1,17 @@
+import { cn } from "@/shared";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-export const SoundLogo = () => {
+type Props = {
+  className?: string;
+};
+
+export const SoundLogo: React.FC<Props> = ({ className })=> {
+ const t = useTranslations('logo');
+  
   return (
-    <Link href="/" className="font-medium text-xl md:text-2xl">
-      Vitalii <span className="text-green-700">Phat Phil</span> Verdiiev
+    <Link href="/" className={cn("font-medium text-xl md:text-2xl", className)}>
+      {t('firstName')} <span className="text-green-700">{t('nick-name')}</span> {t('lastName')}
     </Link>
   );
 };

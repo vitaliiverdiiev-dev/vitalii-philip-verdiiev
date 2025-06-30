@@ -1,22 +1,22 @@
 export const navLinks: NavLink[] = [
   {
-    label: "Home",
+    label: "home",
     path: "/",
   },
   {
-    label: "About Me",
+    label: "about-me",
     path: "/about-me",
   },
   {
-    label: "Dev",
+    label: "dev",
     path: "/dev",
   },
   {
-    label: "Sound",
+    label: "sound",
     path: "/sound",
   },
   {
-    label: "Contacts",
+    label: "contacts",
     path: "/contacts",
   },
 ];

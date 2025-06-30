@@ -1,12 +1,14 @@
 import { ComingSoon } from "@/pages";
 import { Icon } from "@/shared";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations("sound");
   // return <SoundPage />;
   return (
     <ComingSoon title="Sound page">
       <div className="mt-10">
-        <p className="text-2xl font-semibold">Meanwhile, check out my music</p>
+        <p className="text-2xl font-semibold">{t('check-my-music')}</p>
         <ul className="flex items-center justify-center gap-4 mt-4 transition-colors duration-300">
           <li>
             <a

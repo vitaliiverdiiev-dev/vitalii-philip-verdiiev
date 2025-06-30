@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { ComponentProps } from "react";
 import { cn } from "@/shared";
 import { NavLink } from "./links";
+import { useTranslations } from "next-intl";
 
 type NavLinksProps = ComponentProps<"ul"> & {
   links: NavLink[];
@@ -21,6 +22,7 @@ export const NavLinks = ({
   ...props
 }: NavLinksProps) => {
   const pathname = usePathname();
+  const t = useTranslations("navigation");
 
   return (
     <ul className={cn("flex gap-4", className)} {...props}>
@@ -51,7 +53,7 @@ export const NavLinks = ({
               aria-disabled={isDisabled}
               {...(isDisabled ? disabledLinkProps : {})}
             >
-              {link.label}
+              {t(link.label)}
             </Link>
           </li>
         );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { cn } from "@/shared";
 
 type Props = {
@@ -6,9 +7,11 @@ type Props = {
 };
 
 export const MainLogo: React.FC<Props> = ({ className }) => {
+  const t = useTranslations('logo');
+  
   return (
     <Link href="/" className={cn("font-medium text-xl md:text-2xl", className)}>
-      Vitalii <span className="text-green-700">Philip</span> Verdiiev
+      {t('firstName')} <span className="text-green-700">{t('middleName')}</span> {t('lastName')}
     </Link>
   );
 };

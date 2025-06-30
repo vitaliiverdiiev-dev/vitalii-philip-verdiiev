@@ -1,4 +1,5 @@
 import { PageWrapper } from "@/widgets";
+import { useTranslations } from "next-intl";
 import { PropsWithChildren } from "react";
 
 type Props = PropsWithChildren & {
@@ -6,16 +7,17 @@ type Props = PropsWithChildren & {
 };
 
 export const ComingSoon: React.FC<Props> = ({ title, children }) => {
+  const t = useTranslations("comingSoon");
+
   return (
     <PageWrapper>
       <main className="flex flex-col flex-1 items-center justify-center bg-background text-foreground px-4">
         <div className="text-center space-y-4">
           <h1 className="text-2xl md:text-4xl font-semibold tracking-tight">
-            {title ? title + " is coming soon!" : "Coming Soon!"}
+            {title ? title + t('is-coming-soon') : t('coming-soon')}
           </h1>
           <p className="text-neutral-500 max-w-md mx-auto">
-            This page is still under construction. I&apos;m crafting something
-            meaningful - come back soon.
+           {t('description')}
           </p>
         </div>
         {children}

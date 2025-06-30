@@ -153,3 +153,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 10px 2px oklch(52.7% 0.154 150.069);
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0 0 10px 2px oklch(100% 0.00011 271.152);
+    }
+  }
+  50% {
+    transform: scale(1.8);
+    opacity: 0.6;
+    box-shadow: 0 0 20px 6px oklch(93.403% 0.00011 271.152);
+  }
+}
+
+.animate-pulseGlow {
+  animation: pulseGlow 1.6s ease-in-out infinite;
+}

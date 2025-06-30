@@ -5,6 +5,7 @@ import { navLinks } from "../nav-links/links";
 import { NavLinks } from "../nav-links/nav-links";
 import { ThemeToggle } from "../theme-toggle";
 import { MobileMenu } from "../mobile-menu/mobile-menu";
+import LocaleSwitcher from "../locale-switcher";
 
 type HeaderProps = {
   logo: React.ReactNode;
@@ -24,7 +25,8 @@ export const Header = ({ logo }: HeaderProps) => {
         <MobileMenu isOpen={isMobileMenuOpen} onToggle={toggleMobileMenu} />
         <nav className="flex-1 hidden md:flex md:items-center md:justify-end">
           <NavLinks links={navLinks} />
-          <div className="ml-10">
+          <div className="ml-10 flex gap-2">
+            <LocaleSwitcher />
             <ThemeToggle />
           </div>
         </nav>
@@ -38,7 +40,10 @@ export const Header = ({ logo }: HeaderProps) => {
               className="flex-col items-center text-xl space-y-4"
               onLinkClick={toggleMobileMenu}
             />
-            <ThemeToggle />
+            <div className="flex gap-2">
+              <LocaleSwitcher />
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       )}
