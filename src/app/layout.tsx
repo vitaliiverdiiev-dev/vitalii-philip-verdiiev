@@ -34,7 +34,7 @@ export default async function RootLayout({
             <HydrationLoader>
               {children}
               <Footer />
-              <Toaster position="top-right" offset={{ top: 80}} visibleToasts={1} />
+              <Toaster position="top-right" offset={{ top: 80}} mobileOffset={{ top: 50}} visibleToasts={1} />
             </HydrationLoader>
           </NextIntlClientProvider>
         </ThemeProvider>
