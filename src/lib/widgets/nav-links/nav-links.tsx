@@ -38,7 +38,7 @@ export const NavLinks = ({
                 "p-4 rounded-md transition-colors",
                 "hover:text-green-700",
                 isActive
-                  ? "underline underline-offset-4 font-medium text-green-700"
+                  ? "underline underline-offset-8 font-medium text-green-700"
                   : "text-foreground",
                 isDisabled && disabledLinkProps.className
               )}

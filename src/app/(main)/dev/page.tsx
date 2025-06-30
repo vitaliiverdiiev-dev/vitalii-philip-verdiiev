@@ -11,9 +11,17 @@ export default function Page() {
           href="https://github.com/vitaliiverdiiev-dev"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block transition-transform duration-300 hover:rotate-[35deg]"
+          className="inline-block transition-transform duration-300 hover:-translate-y-1"
         >
-          <Icon icon="github" size="50px" />
+          <Icon icon="github" size="40px" />
+        </a>
+        <a
+          href="https://linkedin.com/in/vitaliiverdiiev"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block transition-transform duration-300 hover:-translate-y-1"
+        >
+          <Icon icon="linkedin" size="40px" />
         </a>
         <DownloadCVButton />
       </div>

@@ -19,7 +19,7 @@ export default function LocaleSwitcher() {
       setUserLocale(newLocale);
 
       if (newLocale === UKRAINIAN) {
-        toast.error("Oh no, don't do that, please! Learn English...");
+        toast.error("Oh no, don't do that. Learn English!");
       } else {
         toast.success("Good choice!");
       }

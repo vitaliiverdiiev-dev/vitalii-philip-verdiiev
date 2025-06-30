@@ -11,7 +11,7 @@ export default function Page() {
         <p className="text-2xl font-semibold text-center">
           {t("check-my-music")}
         </p>
-        <ul className="flex items-center justify-center gap-4 mt-4 transition-colors duration-300">
+        <ul className="flex items-center justify-center gap-4 mt-6 transition-colors duration-300">
           <li>
             <a
               href="https://music.apple.com/us/artist/phat-phil/1795527545"
@@ -20,8 +20,8 @@ export default function Page() {
             >
               <Icon
                 icon="apple"
-                size="50px"
-                className="hover:text-gray-600 transition-colors duration-300"
+                size="40px"
+                className="hover:text-gray-500 dark:hover:text-gray-300 transition-colors transition-transform hover:-translate-y-1 duration-300"
               />
             </a>
           </li>
@@ -33,8 +33,8 @@ export default function Page() {
             >
               <Icon
                 icon="spotify"
-                size="50px"
-                className="hover:text-green-600 transition-colors duration-300"
+                size="40px"
+                className="hover:text-green-600 transition-colors transition-transform hover:-translate-y-1 duration-300"
               />
             </a>
           </li>
@@ -46,8 +46,8 @@ export default function Page() {
             >
               <Icon
                 icon="youtube"
-                size="50px"
-                className="hover:text-red-600 transition-colors duration-300"
+                size="40px"
+                className="hover:text-red-500 transition-colors transition-transform hover:-translate-y-1 duration-300"
               />
             </a>
           </li>

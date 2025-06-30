@@ -8,7 +8,7 @@ export const ContactsPage = () => {
   return (
     <PageWrapper>
       <div className="container flex-1 flex flex-col items-center justify-center text-center">
-        <h1 className="text-3xl md:text-5xl">{t('holla')}</h1>
+        <h1 className="text-3xl md:text-5xl font-light">{t("holla")}</h1>
         <div className="mt-6 flex flex-col items-center justify-center">
           <a
             className="mt-4 text-xl md:text-2xl text-green-700 font-medium"
@@ -28,15 +28,17 @@ export const ContactsPage = () => {
             href="https://instagram.com/ukrainiancustomer/"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block transition-transform duration-300 hover:-translate-y-1"
           >
-            <Icon icon="instagram" />
+            <Icon icon="instagram" size="40px" />
           </a>
           <a
             href="https://t.me/ukrainiancustomer/"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block transition-transform duration-300 hover:-translate-y-1"
           >
-            <Icon icon="telegram" />
+            <Icon icon="telegram" size="40px" />
           </a>
         </div>
       </div>

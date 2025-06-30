@@ -10,6 +10,7 @@ import {
   FileArrowDown,
   CaretRight,
   DotsSix,
+  LinkedinLogo,
 } from "@phosphor-icons/react/dist/ssr";
 
 export const ICON_MAP = {
@@ -22,6 +23,7 @@ export const ICON_MAP = {
   spotify: SpotifyLogo,
   youtube: YoutubeLogo,
   github: GithubLogo,
+  linkedin: LinkedinLogo,
   "caret-right": CaretRight,
   "download-file": FileArrowDown,
 } as const;

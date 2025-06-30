@@ -6,10 +6,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import { loadMessages } from "../i18n/load-messages";
 import { HydrationLoader } from "@/shared/hydration-loader";
+import { Toaster } from "@/shared/ui/sonner";
+import "@/app/styles/globals.css";
 
 export { mainMetadata as metadata };
-import "@/app/styles/globals.css";
-import { Toaster } from "@/shared/ui/sonner";
 
 export default async function RootLayout({
   children,
@@ -36,8 +36,8 @@ export default async function RootLayout({
               <Footer />
               <Toaster
                 position="top-right"
-                offset={{ top: 80 }}
-                mobileOffset={{ top: 50 }}
+                offset={{ top: 90 }}
+                mobileOffset={{ top: 60 }}
                 visibleToasts={1}
               />
             </HydrationLoader>

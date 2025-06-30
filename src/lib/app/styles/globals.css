@@ -81,7 +81,7 @@
 }
 
 .dark {
-  --background: oklch(0.117 0 0);
+  --background: oklch(21.779% 0.00002 271.152);
   --foreground: oklch(0.985 0.001 106.423);
   --card: oklch(0.216 0.006 56.043);
   --card-foreground: oklch(0.985 0.001 106.423);
@@ -142,6 +142,20 @@
   }
   .perspective-\[1000px\] {
     perspective: 1000px;
+  }
+
+  @keyframes bounce-y {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  .hover\:animate-bounce-y:hover {
+    animation: bounce-y 0.75s ease-in-out;
   }
 }
 

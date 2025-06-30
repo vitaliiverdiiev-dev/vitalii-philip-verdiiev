@@ -17,7 +17,7 @@ export function HydrationLoader({ children }: Props) {
     return (
       <div
         aria-label="Loading..."
-        className="fixed inset-0 bg-white dark:bg-black flex justify-center items-center z-50"
+        className="fixed inset-0 bg-background flex justify-center items-center z-50"
       >
         <Pulser />
       </div>

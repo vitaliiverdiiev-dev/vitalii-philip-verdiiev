@@ -3,6 +3,7 @@
 import { useMemo } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { cn } from "@/shared";
 
 export const Footer = () => {
   const year = useMemo(() => new Date().getFullYear(), []);
@@ -20,7 +21,10 @@ export const Footer = () => {
         src="/totoro.png"
         width={69}
         height={69}
-        className="absolute bottom-0 right-0 size-[50px] md:size-[69px]"
+        className={cn(
+          "absolute bottom-0 right-0 size-[50px] md:size-[69px]",
+          "transition-transform duration-300 hover:animate-bounce-y"
+        )}
       />
     </footer>
   );

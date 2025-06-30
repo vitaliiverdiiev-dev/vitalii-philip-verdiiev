@@ -7,11 +7,12 @@ type Props = {
 };
 
 export const MainLogo: React.FC<Props> = ({ className }) => {
-  const t = useTranslations('logo');
-  
+  const t = useTranslations("logo");
+
   return (
-    <Link href="/" className={cn("font-medium text-xl md:text-2xl", className)}>
-      {t('firstName')} <span className="text-green-700">{t('middleName')}</span> {t('lastName')}
+    <Link href="/" className={cn("font-medium text-lg md:text-2xl", className)}>
+      {t("firstName")} <span className="text-green-700">{t("middleName")}</span>{" "}
+      {t("lastName")}
     </Link>
   );
 };
