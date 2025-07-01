@@ -65,7 +65,7 @@ const HeaderMobileNav: FC<HeaderMobileNavProps> = ({ isOpen, onClose }) => {
   );
 };
 
-export const Header: FC<HeaderProps> = memo(({ logo }) => {
+export const HeaderRefactored: FC<HeaderProps> = memo(({ logo }) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = useCallback(() => {
@@ -96,4 +96,4 @@ export const Header: FC<HeaderProps> = memo(({ logo }) => {
   );
 });
 
-Header.displayName = "Header";
+HeaderRefactored.displayName = "HeaderRefactored";

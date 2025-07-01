@@ -1,3 +1,5 @@
+"use client";
+
 import { useLocaleToggle } from "./hooks/use-locale-toggle";
 import { LocaleToggleButton } from "./ui/locale-toggle-button.ui";
 

@@ -1,15 +1,11 @@
-import { mainMetadata } from "@/shared";
-import { ThemeProvider } from "@/app";
-import { mono, sans, titles } from "@/shared/config/fonts/fonts";
-import { Footer } from "@/widgets";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
+import { ThemeProvider } from "@/app";
+import { Footer, Header } from "@/widgets";
+import { HydrationLoader, mono, sans, titles, Toaster } from "@/shared";
 import { loadMessages } from "../i18n/load-messages";
-import { HydrationLoader } from "@/shared/ui/hydration-loader/hydration-loader";
-import { Toaster } from "@/shared/ui/sonner";
-import "@/app/styles/globals.css";
 
-export { mainMetadata as metadata };
+import "@/app/styles/globals.css";
 
 export default async function RootLayout({
   children,
@@ -32,6 +28,7 @@ export default async function RootLayout({
         >
           <NextIntlClientProvider locale={locale} messages={messages}>
             <HydrationLoader>
+              <Header />
               {children}
               <Footer />
               <Toaster

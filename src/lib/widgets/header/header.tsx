@@ -1,19 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { navLinks } from "../nav-links/links";
-import { NavLinks } from "../nav-links/nav-links";
-import { ThemeToggle } from "../../features/theme-toggle";
-import { MobileMenu } from "../mobile-menu/mobile-menu";
-import {LocaleToggle} from "../../features";
+import { usePathname } from "next/navigation";
+import { type LogoType, Logo, MobileMenu, NavLinks, navLinks } from "@/widgets";
+import { LocaleToggle, ThemeToggle } from "@/features";
 import { cn } from "@/shared";
 
-type HeaderProps = {
-  logo: React.ReactNode;
-};
-
-export const Header = ({ logo }: HeaderProps) => {
+export const Header: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const logoType: LogoType = pathname.startsWith("/sound")
+    ? "nick-name"
+    : "main";
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -26,7 +25,7 @@ export const Header = ({ logo }: HeaderProps) => {
       )}
     >
       <div className="container flex justify-between items-center h-[50px] md:h-20">
-        {logo}
+        <Logo logoType={logoType} />
         <MobileMenu isOpen={isMobileMenuOpen} onToggle={toggleMobileMenu} />
         <nav className="flex-1 hidden md:flex md:items-center md:justify-end">
           <NavLinks links={navLinks} />

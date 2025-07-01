@@ -1,5 +1,6 @@
-export { Header } from "./header/header";
-export { Footer } from "./footer";
-export { NavLinks } from "./nav-links/nav-links";
-export { ThemeToggle } from "../features/theme-toggle";
-export { PageWrapper } from "./page-wrapper/page-wrapper";
+export * from "./footer";
+export * from "./header";
+export * from "./logo";
+export * from "./mobile-menu";
+export * from "./nav-links";
+export * from "./page-wrapper";
