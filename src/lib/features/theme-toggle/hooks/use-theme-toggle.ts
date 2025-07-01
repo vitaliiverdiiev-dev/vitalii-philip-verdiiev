@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
 
-export const useThemeToggler = () => {
+export const useThemeToggle = () => {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
@@ -10,5 +10,5 @@ export const useThemeToggler = () => {
   return {
     theme,
     toggleTheme,
-  }
-}
+  };
+};

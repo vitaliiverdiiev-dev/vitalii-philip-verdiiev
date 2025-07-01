@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/shared";
-import { useThemeToggler } from "../hooks/use-theme-toggler";
+import { useThemeToggle } from "../hooks/use-theme-toggle";
 
-type Props = ReturnType<typeof useThemeToggler>;
+type Props = ReturnType<typeof useThemeToggle>;
 
 export const ThemeToggleButton: React.FC<Props> = ({ theme, toggleTheme }) => {
   return (

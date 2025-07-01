@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { navLinks } from "../nav-links/links";
 import { NavLinks } from "../nav-links/nav-links";
-import { ThemeToggle } from "../theme-toggle";
+import { ThemeToggle } from "../../features/theme-toggle";
 import { MobileMenu } from "../mobile-menu/mobile-menu";
-import LocaleSwitcher from "../locale-switcher";
+import {LocaleToggle} from "../../features";
 import { cn } from "@/shared";
 
 type HeaderProps = {
@@ -31,7 +31,7 @@ export const Header = ({ logo }: HeaderProps) => {
         <nav className="flex-1 hidden md:flex md:items-center md:justify-end">
           <NavLinks links={navLinks} />
           <div className="ml-10 flex gap-2">
-            <LocaleSwitcher />
+            <LocaleToggle />
             <ThemeToggle />
           </div>
         </nav>
@@ -46,7 +46,7 @@ export const Header = ({ logo }: HeaderProps) => {
               onLinkClick={toggleMobileMenu}
             />
             <div className="flex gap-2">
-              <LocaleSwitcher />
+              <LocaleToggle />
               <ThemeToggle />
             </div>
           </div>

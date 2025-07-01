@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { cn } from "@/shared";
 
 export const Footer = () => {
@@ -18,7 +18,7 @@ export const Footer = () => {
       </div>
       <Image
         alt="Totoro Keeper"
-        src="/totoro.png"
+        src="/images/footer/totoro.png"
         width={69}
         height={69}
         className={cn(

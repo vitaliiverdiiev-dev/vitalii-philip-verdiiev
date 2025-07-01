@@ -1,11 +1,17 @@
-import { Icon } from "@/shared";
+import { Icon, TooltipWrapper } from "@/shared";
 
 export const DownloadCVButton = () => (
-  <a
-    href="/Vitalii_Philip_Verdiiev_React_Engineer.pdf"
-    download
-    className="transition-transform duration-300 hover:rotate-[15deg]"
+  <TooltipWrapper
+    content={<span className="font-bold">Download CV</span>}
+    side="bottom"
   >
-    <Icon icon="download-file" className="size-[40px]" />
-  </a>
+    <a
+      href="/documents/Vitalii_Philip_Verdiiev_React_Engineer.pdf"
+      download
+      className="transition-transform duration-300 hover:rotate-[15deg]"
+      aria-label="Download CV"
+    >
+      <Icon icon="download-file" size={40} />
+    </a>
+  </TooltipWrapper>
 );

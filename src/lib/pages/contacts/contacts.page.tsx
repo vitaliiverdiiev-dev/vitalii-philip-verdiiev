@@ -1,6 +1,6 @@
-import { Icon } from "@/shared";
-import { PageWrapper } from "@/widgets";
 import { useTranslations } from "next-intl";
+import { PageWrapper } from "@/widgets";
+import { EXTERNAL_LINKS, ExternalLink } from "@/shared";
 
 export const ContactsPage = () => {
   const t = useTranslations("contacts");
@@ -18,28 +18,14 @@ export const ContactsPage = () => {
           </a>
           <a
             className="mt-4 text-xl md:text-2xl"
-            href="mail:+vitaliiverdiiev@gmail.com"
+            href="mailto:vitaliiverdiiev@gmail.com"
           >
             vitaliiverdiiev@gmail.com
           </a>
         </div>
         <div className="mt-6 flex items-center justify-center gap-4">
-          <a
-            href="https://instagram.com/ukrainiancustomer/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block transition-transform duration-300 hover:-translate-y-1"
-          >
-            <Icon icon="instagram" size="40px" />
-          </a>
-          <a
-            href="https://t.me/ukrainiancustomer/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block transition-transform duration-300 hover:-translate-y-1"
-          >
-            <Icon icon="telegram" size="40px" />
-          </a>
+          <ExternalLink href={EXTERNAL_LINKS.INSTAGRAM} icon="instagram" />
+          <ExternalLink href={EXTERNAL_LINKS.TELEGRAM} icon="telegram" />
         </div>
       </div>
     </PageWrapper>

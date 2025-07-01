@@ -14,7 +14,7 @@ export const AboutMePage = () => {
         <div className="flex flex-col justify-center items-center md:mt-0 md:order-2">
           <Image
             alt="My amiga and I"
-            src="/big_amigos.png"
+            src="/images/about-me/big_amigos.png"
             width={500}
             height={500}
             className="rounded-xl w-full sm:w-10/12 md:w-8/12"

@@ -5,7 +5,7 @@ import { Footer } from "@/widgets";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import { loadMessages } from "../i18n/load-messages";
-import { HydrationLoader } from "@/shared/hydration-loader";
+import { HydrationLoader } from "@/shared/ui/hydration-loader/hydration-loader";
 import { Toaster } from "@/shared/ui/sonner";
 import "@/app/styles/globals.css";
 
