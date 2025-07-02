@@ -4,10 +4,10 @@ import { cookies } from "next/headers";
 import { defaultLocale, Locale } from "./config";
 import { COOKIE_NAME } from "./consts";
 
-export async function getUserLocale() {
+export const getUserLocale = async () => {
   return (await cookies()).get(COOKIE_NAME)?.value || defaultLocale;
-}
+};
 
-export async function setUserLocale(locale: Locale) {
+export const setUserLocale = async (locale: Locale) => {
   (await cookies()).set(COOKIE_NAME, locale);
-}
+};

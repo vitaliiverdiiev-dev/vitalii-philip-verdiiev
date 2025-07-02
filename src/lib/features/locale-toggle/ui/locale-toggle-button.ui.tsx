@@ -1,7 +1,5 @@
 import { useLocaleToggle } from "../hooks/use-locale-toggle";
-import { Button } from "@/shared";
-
-import { ENGLISH, UKRAINIAN } from "../../../../i18n/consts";
+import { Button, ENGLISH, UKRAINIAN } from "@/shared";
 
 type Props = ReturnType<typeof useLocaleToggle>;
 

@@ -1,10 +1,7 @@
 import { useTransition } from "react";
 import { useLocale } from "next-intl";
 import { toast } from "sonner";
-
-import { Locale } from "../../../../i18n/config";
-import { ENGLISH, UKRAINIAN } from "../../../../i18n/consts";
-import { setUserLocale } from "../../../../i18n/locale";
+import { type Locale, ENGLISH, setUserLocale, UKRAINIAN } from "@/shared";
 
 export const useLocaleToggle = () => {
   const locale = useLocale() as Locale;

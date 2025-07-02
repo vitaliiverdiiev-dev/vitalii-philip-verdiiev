@@ -2,8 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import { ThemeProvider } from "@/app";
 import { Footer, Header } from "@/widgets";
-import { HydrationLoader, mono, sans, titles, Toaster } from "@/shared";
-import { loadMessages } from "../i18n/load-messages";
+import { HydrationLoader, loadMessages, mono, sans, titles, Toaster } from "@/shared";
 
 import "@/app/styles/globals.css";
 
