@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { PageWrapper } from "@/widgets";
-import { cn } from "@/shared";
+import { bigAmigosBlur, cn } from "@/shared";
 
 export const AboutMePage = () => {
   const t = useTranslations("aboutMe");
@@ -13,14 +13,15 @@ export const AboutMePage = () => {
       <div className="container flex-1 grid grid-rows-[auto_auto] md:grid-rows-1 md:grid-cols-2 md:gap-4 mt-20">
         <div className="flex flex-col justify-center items-center md:mt-0 md:order-2">
           <Image
-            alt="My amiga and I"
             src="/images/about-me/big_amigos.png"
+            alt="My amiga and I"
             width={500}
             height={500}
-            className="rounded-xl w-full sm:w-10/12 md:w-8/12"
             placeholder="blur"
-            blurDataURL="/blur_amigos.png"
+            blurDataURL={bigAmigosBlur}
             priority={true}
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 83vw, 66vw"
+            className="rounded-xl"
           />
         </div>
         <div className="flex flex-col items-center justify-center rounded-xl my-6">
