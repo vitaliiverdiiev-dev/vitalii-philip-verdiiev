@@ -5,6 +5,8 @@ export const loadMessages = async(locale: string) => {
   const footer = (await import(`@/shared/locales/${locale}/footer.json`)).default;
   const home = (await import(`@/shared/locales/${locale}/home.json`)).default;
   const logo = (await import(`@/shared/locales/${locale}/logo.json`)).default;
+  const resume = (await import(`@/shared/locales/${locale}/resume.json`)).default;
+  const resumePage = (await import(`@/shared/locales/${locale}/resume-page.json`)).default;
   const navigation = (await import(`@/shared/locales/${locale}/navigation.json`)).default;
   const sound = (await import(`@/shared/locales/${locale}/sound.json`)).default;
 
@@ -15,6 +17,8 @@ export const loadMessages = async(locale: string) => {
     footer,
     home,
     logo,
+    resume, 
+    resumePage,
     navigation,
     sound,
   };

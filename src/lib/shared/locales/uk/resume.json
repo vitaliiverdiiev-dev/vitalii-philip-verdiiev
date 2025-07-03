@@ -1,0 +1,127 @@
+{
+  "personalInfo": {
+    "fullName": "Віталій Філіп Вердієв",
+    "role": "React-інженер (TypeScript)",
+    "location": "Київ, Україна",
+    "email": "vitaliiverdiiev@gmail.com",
+    "phone": "+380-63-5105769",
+    "website": "vitaliiverdiiev.com",
+    "linkedin": "vitaliiverdiiev",
+    "github": "vitaliiverdiiev-dev",
+    "telegram": "ukrainiancustomer",
+    "instagram": "ukrainiancustomer",
+    "languages": ["Англійська", "Українська", "Російська"]
+  },
+  "summary": "Відданий React-інженер з понад 5-річним досвідом розробки масштабованих рішень зі спеціалізацією на TypeScript та сучасній фронтенд-архітектурі. Повністю зосереджений на створенні надійних, підтримуваних додатків, що поєднують продуктивність і масштабованість. Мій підхід — це увага до деталей, орієнтація на найкращі практики та довгострокову підтримку. Я вірю, що сильний продукт починається з чистого, структурованого коду.",
+  "experience": [
+    {
+      "position": "React-інженер (контракт)",
+      "company": "Львів, Україна",
+      "dates": "Серпень 2024 – Березень 2025",
+      "duration": "8 місяців",
+      "points": [
+        "Брав участь у розробці та покращенні дашбордів для двох проєктів, виявляючи слабкі місця та пропонуючи стратегічні рішення.",
+        "Створював UI-компоненти та оптимізував робочі процеси, забезпечуючи масштабованість і зручність підтримки.",
+        "Надавав технічні рекомендації для підвищення продуктивності та покращення фронтенд-архітектури."
+      ]
+    },
+    {
+      "position": "React-інженер",
+      "company": "Uniqit Group LLC (Nuvalt)",
+      "location": "Київ, Україна",
+      "dates": "Травень 2023 – Липень 2024",
+      "duration": "1 рік 3 місяці",
+      "points": [
+        "Розробляв платформу управління крипто-бізнесом із фокусом на адмін-панель і статистику.",
+        "Інженерив самостійний інсталятор для безперебійного розгортання й досвіду користувача.",
+        "Допомагав у створенні власної UI-бібліотеки для повторного використання компонентів.",
+        "Перетворював складні дизайни на піксель-перфект сторінки у стислих термінах."
+      ]
+    },
+    {
+      "position": "React-розробник",
+      "company": "Faster Than Light LLC",
+      "location": "Київ, Україна",
+      "dates": "Жовтень 2021 – Травень 2023",
+      "duration": "1 рік 8 місяців",
+      "points": [
+        "Розробив MVP для Offsiter, допомігши команді залучити інвестиції. Ідентифікував проблему, проаналізував і реалізував рішення.",
+        "Розробив модуль обліку для внутрішньої CRM у співпраці з дизайнерами, QA та бекендом.",
+        "Підтримував кілька проєктів, забезпечуючи якісний код і дотримання цілей спринту."
+      ]
+    },
+    {
+      "position": "HTML, CSS та JavaScript-розробник",
+      "company": "Фриланс",
+      "location": "Київ, Україна",
+      "dates": "Вересень 2019 – Березень 2021",
+      "duration": "1 рік 7 місяців",
+      "points": [
+        "Перетворював дизайни на адаптивні лендинги, віджети та email-шаблони.",
+        "Підтримував і вдосконалював клієнтські додатки для забезпечення стабільності й продуктивності."
+      ]
+    }
+  ],
+  "skills": {
+    "frontend": {
+      "core": ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"],
+      "frameworks": ["React", "Next.js"],
+      "stateManagement": [
+        "Context API",
+        "Redux",
+        "Redux Toolkit",
+        "Redux Saga",
+        "Zustand",
+        "Jotai"
+      ],
+      "uiLibraries": [
+        "MUI",
+        "NextUI",
+        "Shadcn/ui",
+        "Chakra UI",
+        "Ant Design",
+        "Bootstrap"
+      ],
+      "cssTools": ["SCSS", "Less", "TailwindCSS", "Styled Components"],
+      "routing": [
+        "React Router DOM",
+        "TanStack Router",
+        "Next.js App Router",
+        "Pages Router"
+      ],
+      "auth": ["NextAuth.js", "Auth.js", "OAuth"],
+      "forms": ["React Hook Form", "TanStack Form", "Formik", "JSON Forms"],
+      "validation": ["Zod", "Yup"],
+      "i18n": ["i18Next", "next-intl"],
+      "api": ["REST (Axios, TanStack Query)", "GraphQL (Apollo Client)"],
+      "tables": ["TanStack Table"],
+      "charts": ["Recharts", "React Charts 2", "Chart.js", "React Flow"],
+      "testing": ["Jest", "Vitest", "React Testing Library", "Cypress"],
+      "ciCd": ["GitHub Actions", "GitLab CI/CD"],
+      "websockets": ["WebSocket", "Socket.IO"],
+      "builders": ["Webpack", "Babel", "Gulp"]
+    },
+    "backend": {
+      "note": "Без комерційного досвіду",
+      "core": ["Node.js"],
+      "frameworks": ["Express", "NestJS"],
+      "api": ["REST", "GraphQL"],
+      "databases": ["SQLite", "MongoDB", "PostgreSQL", "Redis"],
+      "orm": ["TypeORM", "Mongoose", "Drizzle", "Prisma"],
+      "docker": ["Docker", "Docker Compose"],
+      "cloud": ["Heroku", "Vercel", "Amazon ECR"]
+    },
+    "other": {
+      "methodologies": ["Agile", "SCRUM", "BEM", "FSD"],
+      "documentation": ["Storybook", "Postman", "Swagger"],
+      "versionControl": ["Git", "GitHub", "GitLab", "Bitbucket"],
+      "os": ["Linux", "Windows", "MacOS"]
+    }
+  },
+  "values": [
+    "Глибока увага до найкращих практик, чистої архітектури та підтримуваного коду.",
+    "Моя робота керується точністю, ефективністю та сучасним підходом до фронтенду.",
+    "Працюю найкраще в командах, де цінується якість розробки та постійне вдосконалення."
+  ],
+  "closing": "Щиро дякую, що переглянули моє резюме. Ціную вашу увагу!"
+}

@@ -1,0 +1,127 @@
+{
+  "personalInfo": {
+    "fullName": "Vitalii Philip Verdiiev",
+    "role": "React Engineer (TypeScript)",
+    "location": "Kyiv, Ukraine",
+    "email": "vitaliiverdiiev@gmail.com",
+    "phone": "+380-63-5105769",
+    "website": "vitaliiverdiiev.com",
+    "linkedin": "vitaliiverdiiev",
+    "github": "vitaliiverdiiev-dev",
+    "telegram": "ukrainiancustomer",
+    "instagram": "ukrainiancustomer",
+    "languages": ["English", "Ukrainian", "Russian"]
+  },
+  "summary": "Dedicated React Engineer with 5+ years of experience in scalable development specializing in TypeScript and modern front-end architecture. Fully committed to building robust, maintainable applications that balance performance and scalability. My approach is meticulous — every decision is driven by best practices, long-term maintainability, and an obsession with clean, structured code. I believe great products come from a strong foundation, and I’m always looking for ways to refine and optimize my dev process.",
+  "experience": [
+    {
+      "position": "React Engineer (Contract Role)",
+      "company": "Lviv, Ukraine",
+      "dates": "Aug 2024 – Mar 2025",
+      "duration": "8 months",
+      "points": [
+        "Contributed to the development and refinement of dashboards for two projects, identifying weaknesses and proposing strategic improvements.",
+        "Built UI components and optimized workflows, ensuring scalability and maintainability.",
+        "Provided technical insights to improve performance and streamline front-end architecture."
+      ]
+    },
+    {
+      "position": "React Engineer",
+      "company": "Uniqit Group LLC (Nuvalt Project)",
+      "location": "Kyiv, Ukraine",
+      "dates": "May 2023 – July 2024",
+      "duration": "1 year 3 months",
+      "points": [
+        "Developed a Crypto Business Management Platform, focusing on dashboard admin & statistics applications.",
+        "Engineered a self-hosted installer, ensuring seamless deployment and user experience.",
+        "Helped create a custom UI library, improving component reusability across projects.",
+        "Translated complex designs into pixel-perfect landing pages within tight deadlines."
+      ]
+    },
+    {
+      "position": "React Developer",
+      "company": "Faster Than Light LLC",
+      "location": "Kyiv, Ukraine",
+      "dates": "Oct 2021 – May 2023",
+      "duration": "1 year 8 months",
+      "points": [
+        "Delivered the MVP for Offsiter, helping the team secure investments. Identified the root cause, analyzed the issue, proposed solutions, and implemented the fixes.",
+        "Developed the Accounting module for an internal CRM, collaborating closely with Design, QA, and Backend teams.",
+        "Supported multiple projects, ensuring high-quality code and meeting sprint goals."
+      ]
+    },
+    {
+      "position": "HTML, CSS & JavaScript Developer",
+      "company": "Freelance",
+      "location": "Kyiv, Ukraine",
+      "dates": "Sep 2019 – Mar 2021",
+      "duration": "1 year 7 months",
+      "points": [
+        "Transformed designs into fully responsive landing pages, widgets, and email templates.",
+        "Maintained and further developed client applications, ensuring long-term stability and performance."
+      ]
+    }
+  ],
+  "skills": {
+    "frontend": {
+      "core": ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"],
+      "frameworks": ["React", "Next.js"],
+      "stateManagement": [
+        "Context API",
+        "Redux",
+        "Redux Toolkit",
+        "Redux Saga",
+        "Zustand",
+        "Jotai"
+      ],
+      "uiLibraries": [
+        "MUI",
+        "NextUI",
+        "Shadcn/ui",
+        "Chakra UI",
+        "Ant Design",
+        "Bootstrap"
+      ],
+      "cssTools": ["SCSS", "Less", "TailwindCSS", "Styled Components"],
+      "routing": [
+        "React Router DOM",
+        "TanStack Router",
+        "Next.js App Router",
+        "Pages Router"
+      ],
+      "auth": ["NextAuth.js", "Auth.js", "OAuth"],
+      "forms": ["React Hook Form", "TanStack Form", "Formik", "JSON Forms"],
+      "validation": ["Zod", "Yup"],
+      "i18n": ["i18Next", "next-intl"],
+      "api": ["REST (Axios, TanStack Query)", "GraphQL (Apollo Client)"],
+      "tables": ["TanStack Table"],
+      "charts": ["Recharts", "React Charts 2", "Chart.js", "React Flow"],
+      "testing": ["Jest", "Vitest", "React Testing Library", "Cypress"],
+      "ciCd": ["GitHub Actions", "GitLab CI/CD"],
+      "websockets": ["WebSocket", "Socket.IO"],
+      "builders": ["Webpack", "Babel", "Gulp"]
+    },
+    "backend": {
+      "note": "No commercial experience",
+      "core": ["Node.js"],
+      "frameworks": ["Express", "NestJS"],
+      "api": ["REST", "GraphQL"],
+      "databases": ["SQLite", "MongoDB", "PostgreSQL", "Redis"],
+      "orm": ["TypeORM", "Mongoose", "Drizzle", "Prisma"],
+      "docker": ["Docker", "Docker Compose"],
+      "cloud": ["Heroku", "Vercel", "Amazon ECR"]
+    },
+    "other": {
+      "methodologies": ["Agile", "SCRUM", "BEM", "FSD"],
+      "documentation": ["Storybook", "Postman", "Swagger"],
+      "versionControl": ["Git", "GitHub", "GitLab", "Bitbucket"],
+      "os": ["Linux", "Windows", "MacOS"]
+    }
+  },
+  "values": [
+    "A strong focus on best practices, clean architecture, and maintainable code.",
+    "Work driven by precision, efficiency, and deep understanding of modern front-end development.",
+    "Thrive in environments that value high-quality engineering and continuous improvement."
+  ],
+  "closing": "Thank you for taking the time to review my resume - I truly appreciate your attention!"
+}
