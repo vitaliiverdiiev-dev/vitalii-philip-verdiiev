@@ -1,8 +1,15 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import { ThemeProvider } from "@/app";
-import { Footer, Header } from "@/widgets";
-import { HydrationLoader, loadMessages, mono, sans, titles, Toaster } from "@/shared";
+import { ChatWidget, Footer, Header } from "@/widgets";
+import {
+  HydrationLoader,
+  loadMessages,
+  mono,
+  sans,
+  titles,
+  Toaster,
+} from "@/shared";
 
 import "@/app/styles/globals.css";
 
@@ -36,6 +43,7 @@ export default async function RootLayout({
                 mobileOffset={{ top: 60 }}
                 visibleToasts={1}
               />
+              <ChatWidget />
             </HydrationLoader>
           </NextIntlClientProvider>
         </ThemeProvider>

@@ -11,6 +11,8 @@ import {
   CaretRight,
   DotsSix,
   LinkedinLogo,
+  ChatCircleDots,
+  PaperPlaneRight,
 } from "@phosphor-icons/react/dist/ssr";
 
 export const ICON_MAP = {
@@ -26,6 +28,8 @@ export const ICON_MAP = {
   linkedin: LinkedinLogo,
   "caret-right": CaretRight,
   "download-file": FileArrowDown,
+  chat: ChatCircleDots,
+  send: PaperPlaneRight
 } as const;
 
 export type IIconName = keyof typeof ICON_MAP;
